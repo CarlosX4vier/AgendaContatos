@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Helpers\CorreiosAPI;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+
+        //$correiosAPI = new CorreiosAPI();
+
+        //var_dump($correiosAPI->consultarCEP('13880-000'));
+
         return view('home');
     }
 }
